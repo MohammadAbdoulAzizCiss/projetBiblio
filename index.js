@@ -16,10 +16,10 @@ function setActive(id){
 
     switch(id){
         case 1:
-            window.location="/index.html";
+            window.location="index.html";
             break;
         case 2:
-            window.location="/collection.html"
+            window.location="collection.html"
             break;
         case 3:
             window.location="wishlist.html"
