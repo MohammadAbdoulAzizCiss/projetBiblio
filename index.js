@@ -14,4 +14,24 @@ function setActive(id){
         index++;
     }
 
+    switch(id){
+        case 1:
+            window.location="/index.html";
+            break;
+        case 2:
+            window.location="/collection.html"
+            break;
+        case 3:
+            window.location="wishlist.html"
+            break;
+        case 4:
+            window.location="wishlist.html"
+            break;
+        case 5:
+            window.location="prets.html"
+            break;
+        default:
+            window.location="archives.html"
+    }
+
 }

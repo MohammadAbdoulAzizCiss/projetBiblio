@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <div class="container">
         <nav id="leftNavBar">
             <div class="homeBtn">
@@ -43,7 +44,6 @@
             </nav>
             <div class="mainBottom">
                 <div class="booksField">
-                    <h1 class="fieldName">ajouts recents</h1>
                     <div class="BookList">
                         <div class="bookGroup">
                             <div class="bookCover">
@@ -91,7 +91,6 @@
                     </div>
                 </div>
                 <div class="booksField">
-                    <h1 class="fieldName">ajouts recents</h1>
                     <div class="BookList">
                         <div class="bookGroup">
                             <div class="bookCover">
@@ -139,7 +138,6 @@
                     </div>
                 </div>
                 <div class="booksField">
-                    <h1 class="fieldName">ajouts recents</h1>
                     <div class="BookList">
                         <div class="bookGroup">
                             <div class="bookCover">
@@ -187,12 +185,8 @@
                     </div>
                 </div>
                 <div class="booksField">
-                    <h1 class="fieldName">ajouts recents</h1>
                     <div class="BookList">
                         <div class="bookGroup">
-                            <div class="hoverMenu">
-                                <h1>hello there</h1>
-                            </div>
                             <div class="bookCover">
                                 <img src="./img/richpoor.jpg" alt="loading">
                             </div>
@@ -239,6 +233,26 @@
                 </div>
             </div>
         </div>    
+    </div>
+    <a  href="#addBook" class="float">
+        <i class="fa fa-plus my-float"></i>
+    </a>
+    <div id="addBook">
+        <form action="">
+            <div class="inputGroup">
+                <span>Titre:</span><input type="text" placeholder="enter title">
+            </div>
+            <div class="inputGroup">
+                <span>Auteur:</span><input type="text" placeholder="enter title">
+            </div>
+            <div class="inputGroup">
+                <span>Date de publication:</span><input type="text" placeholder="publication date">
+            </div>
+            <div class="inputGroup">
+                <span>Genre:</span><input type="text" placeholder="enter Genre">
+            </div>
+            <button><span>Add book</span></button>
+        </form>
     </div>
     <script src="index.js"></script>
 </body>
