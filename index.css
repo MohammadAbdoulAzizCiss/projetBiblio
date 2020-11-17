@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+	font-size: larger;
+	padding: 0;
+}
+* {
+	font-family: "Montserrat", sans-serif;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+}
+#leftNavBar {
+	flex: 1;
+	background-color: rgb(43, 43, 43);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.homeBtn {
+	flex: 1;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.homeBtn a {
+	padding-top: 18px;
+	color: #191919;
+	text-align: center;
+	text-decoration-line: none;
+	text-transform: uppercase;
+	background-image: linear-gradient(
+		to right,
+		#67438c,
+		#7a3f98,
+		#9037a0,
+		#a729a6,
+		#c000a9
+	);
+	border: none;
+	box-shadow: 0px 1px 2px 1px #a729a6;
+	margin-top: 20%;
+	font-size: large;
+	width: 70%;
+	height: 17%;
+	outline: none;
+	border-radius: 30px;
+}
+
+.tabList {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+}
+.tabBtn,
+.tabBtn:focus {
+	font-size: larger;
+	outline: 0;
+	border: none;
+	background-color: inherit;
+	color: rgb(112, 112, 112);
+	height: 10%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.tabBtn i {
+	margin: 5%;
+}
+.tabBtn {
+	margin-left: 5%;
+}
+
+.main {
+	flex: 4;
+	color: gray;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(25, 25, 25);
+}
+
+/* div containing search bar an profile group */
+.topBar {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.searchBar {
+	height: 150px;
+	flex: 2;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+}
+
+.material-icons {
+	font-size: 30px;
+	font-weight: lighter;
+	position: absolute;
+	right: 20px;
+	cursor: pointer;
+}
+/* search bar */
+.topBar input,
+.topBar input:focus {
+	padding-left: 30px;
+	font-size: large;
+	margin-left: 15%;
+	outline: none;
+	flex: 1;
+	height: 30%;
+	border-radius: 50px;
+}
+.profileGroup {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 5%;
+	align-items: center;
+}
+.notifs {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+.notifs p {
+	background-color: #ff0083;
+	color: aliceblue;
+	font-size: smaller;
+	width: 90%;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	right: -5px;
+	bottom: -5px;
+}
+
+.profileGroup span {
+	margin-left: 40px;
+}
+.fas.fa-bell {
+	font-size: x-large;
+}
+.mainBottom {
+	flex: 6;
+}
+.avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+/* book List renderer */
+.bookCover {
+	width: 100px;
+}
