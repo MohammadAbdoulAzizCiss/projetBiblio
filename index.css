@@ -50,7 +50,7 @@ body {
 }
 
 .tabList {
-	flex: 2;
+	flex: 3;
 	display: flex;
 	flex-direction: column;
 }
@@ -74,11 +74,12 @@ body {
 }
 
 .main {
-	flex: 4;
+	flex: 5;
 	color: gray;
 	display: flex;
 	flex-direction: column;
 	background-color: rgb(25, 25, 25);
+	overflow-x: scroll;
 }
 
 /* div containing search bar an profile group */
@@ -155,6 +156,59 @@ body {
 	border-radius: 50%;
 }
 /* book List renderer */
-.bookCover {
-	width: 100px;
+.bookCover img {
+	width: 150px;
+	height: 200px;
+	border-radius: 10px;
+}
+.bookTitle {
+	font-size: small;
+	color: #c1c1c1;
+	text-align: left;
+}
+.bookAuthor {
+	font-size: x-small;
+	text-align: left;
+}
+.bookGroup {
+	margin-left: 4%;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	align-items: baseline;
+	/* justify-content: space-around; */
+	margin-bottom: 1px;
+}
+.BookList {
+	display: flex;
+	flex-wrap: wrap;
+}
+.bookGroup span {
+	margin: 4px;
+}
+.fieldName {
+	text-transform: uppercase;
+	font-size: medium;
+	margin-left: 4%;
+	margin-bottom: 2%;
+}
+.booksField {
+	margin-bottom: 2%;
+}
+/* for the custom scrollbar */
+
+::-webkit-scrollbar {
+	background-color: #191919;
+}
+::-webkit-scrollbar-thumb {
+	width: 30%;
+	border-radius: 20px;
+	background-image: linear-gradient(
+		to right,
+		#67438c,
+		#7a3f98,
+		#9037a0,
+		#a729a6,
+		#c000a9
+	);
 }
