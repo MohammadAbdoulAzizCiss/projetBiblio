@@ -35,6 +35,22 @@ function setActive(id){
     }
 
 }
-function display(){
-    document.getElementById("addBook").style.display="table";
+function redirect(currentnode){
+    let children=(currentnode.childNodes)
+    // getting string in src
+    let img=children[1].childNodes[1].getAttribute('src')
+    // getting book title
+    let title=(children[3].innerText)
+    // getting author name
+    let author=children[5].innerText
+    localStorage.setItem("src",img)
+    localStorage.setItem("title",title)
+    localStorage.setItem("author",author)
+    window.location="singleBook.html"
+}
+function displayBook(){
+    document.getElementById("img").setAttribute("src",localStorage.getItem("src"))
+    document.getElementById("title").innerHTML=(localStorage.getItem("title"))
+    document.getElementById("author").innerHTML=(localStorage.getItem("author"))
+    document.getElementById("save").innerHTML=new Date(2020,10,16,10,36,0)
 }

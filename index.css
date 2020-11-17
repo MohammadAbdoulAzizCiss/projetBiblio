@@ -273,3 +273,22 @@ button span {
 form button {
 	align-self: right;
 }
+.displayBook {
+	flex: 1;
+	display: flex;
+}
+.displayBook img {
+	width: 250px;
+	height: 350px;
+	margin: 50px;
+	border-radius: 20px;
+}
+.displayBook table {
+	width: 500px;
+	height: 350px;
+	margin: 50px;
+	border-radius: 20px;
+}
+td[id] {
+	color: white;
+}

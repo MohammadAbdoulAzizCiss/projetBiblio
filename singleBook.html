@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="displayBook()">
     
     <div class="container">
         <nav id="leftNavBar">
@@ -42,6 +42,38 @@
                     <span><img src="./img/Screenshot from 2020-10-08 17-11-08.png" class="avatar" alt=""></span>
                 </div>
             </nav>
+            <div class="displayBook">
+                <img id="img" src="" alt="">
+                <div class="infos">
+                    <table>
+                        <tr>
+                            <td>Titre:</td>
+                            <td id="title"></td>
+                        </tr>
+                        <tr>
+                            <td>Auteur:</td>
+                            <td id="author"></td>
+                        </tr>
+                        <tr>
+                            <td>Sortie en:</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Genre:</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Etat:</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Save:</td>
+                            <td id="save"></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
             <div class="mainBottom">
                 <div class="booksField">
                     <div class="BookList">
@@ -233,6 +265,26 @@
                 </div>
             </div>
         </div>    
+    </div>
+    <a  onclick="display()"class="float">
+        <i class="fa fa-plus my-float"></i>
+    </a>
+    <div id="addBook">
+        <form action="">
+            <div class="inputGroup">
+                <span>Titre:</span><input type="text" placeholder="enter title">
+            </div>
+            <div class="inputGroup">
+                <span>Auteur:</span><input type="text" placeholder="enter title">
+            </div>
+            <div class="inputGroup">
+                <span>Date de publication:</span><input type="text" placeholder="publication date">
+            </div>
+            <div class="inputGroup">
+                <span>Genre:</span><input type="text" placeholder="enter Genre">
+            </div>
+            <button><span>Add book</span></button>
+        </form>
     </div>
     <script src="index.js"></script>
 </body>
