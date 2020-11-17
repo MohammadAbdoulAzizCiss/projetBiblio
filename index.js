@@ -35,3 +35,6 @@ function setActive(id){
     }
 
 }
+function display(){
+    document.getElementById("addBook").style.display="table";
+}
